@@ -53,7 +53,7 @@ exports.default = function (props) {
         ),
         React.createElement(
             'body',
-            null,
+            { className: 'bg-grey' },
             props.body.map(function (renderer) {
                 return createElements(renderer(h, cleanedProps));
             }),
