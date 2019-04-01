@@ -1,13 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
-const request = require('request');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 const serveStatic = require('./serve-static-fallback');
 const amfMiddleware = require('./amf-middleware');
-const smerge = require('smerge');
+const smerge = require('@github1/smerge');
 const oneDay = 86400000;
 const cacheRegExp = /\/c[0-9^\/]+\//;
 const cacheKey = 'c' + new Date().getTime();
