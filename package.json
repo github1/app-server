@@ -1,16 +1,16 @@
 {
   "name": "@github1/app-server",
   "private": false,
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "",
   "main": "src/index.js",
   "bin": {
-    "app-server": "bin/cli.js",
-    "prepublishOnly": "./prepare.sh"
+    "app-server": "bin/cli.js"
   },
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublishOnly": "./prepare.sh"
   },
   "keywords": [],
   "author": "John Collier <john.collier4@gmail.com>",
