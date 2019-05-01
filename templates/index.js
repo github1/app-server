@@ -27,6 +27,10 @@ exports.default = function (props) {
                 httpEquiv: 'X-UA-Compatible',
                 content: 'IE=edge'
             }),
+            props.metaDescription ? React.createElement('meta', {
+                name: 'description',
+                content: props.metaDescription
+            }) : null,
             React.createElement('meta', {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0'
