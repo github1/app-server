@@ -2,6 +2,6 @@
 const path = require('path');
 const server = require('../src/index.js');
 const baseDir = process.env.SERVICE_BASE_DIR || process.cwd();
-const serverJS = path.join(baseDir, 'server.js');
+const serverJS = path.resolve(baseDir, 'server.js');
 
 server([serverJS]);
