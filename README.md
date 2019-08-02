@@ -2,15 +2,15 @@
 
 Provides simple container for server side rendered apps.
 
-# Install
+## Install
 ```shell
 npm install @github1/app-server --save-dev
 ```
 
-# Usage
+## Usage
 
 TBD
 
-# License
+## License
 
-TBD
+[MIT](LICENSE.md)
