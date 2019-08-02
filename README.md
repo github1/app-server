@@ -1,6 +1,6 @@
 # @github1/app-server
 
-Provides simple container for server side rendered apps.
+[description]
 
 [badges]
 
