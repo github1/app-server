@@ -1,7 +1,7 @@
 {
   "name": "@github1/app-server",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.35",
   "description": "Provides a simple container for server-side rendered apps",
   "main": "src/index.js",
   "bin": {
@@ -13,8 +13,8 @@
     "prepublishOnly": "./prepare.sh"
   },
   "keywords": [],
-  "author": "",
-  "license": "",
+  "author": "John Collier <john.collier4@gmail.com>",
+  "license": "MIT",
   "jest": {
     "testURL": "http://localhost"
   },
