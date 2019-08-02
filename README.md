@@ -12,9 +12,7 @@ npm install @github1/app-server --save-dev
 ```
 
 ## Usage
-
 TBD
 
 ## License
-
 [MIT](LICENSE.md)
