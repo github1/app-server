@@ -7,7 +7,7 @@ const h = function () {
 };
 
 exports.default = function (props) {
-    var cleanedProps = JSON.parse(JSON.stringify(props));
+    const cleanedProps = JSON.parse(JSON.stringify(props));
     delete cleanedProps.settings;
     delete cleanedProps.head;
     delete cleanedProps.body;
