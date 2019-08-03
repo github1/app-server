@@ -1,7 +1,7 @@
 {
   "name": "@github1/app-server",
   "private": false,
-  "version": "0.3.1",
+  "version": "0.3.3",
   "description": "Provides a simple container for server-side rendered apps",
   "main": "src/index.js",
   "bin": {
