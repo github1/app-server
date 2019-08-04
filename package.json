@@ -19,7 +19,7 @@
     "testURL": "http://localhost"
   },
   "dependencies": {
-    "@github1/smerge": "0.0.1",
+    "@github1/smerge": "0.3.3",
     "body-parser": "^1.18.2",
     "chalk": "^2.3.2",
     "compression": "^1.7.2",
