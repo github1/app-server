@@ -10,6 +10,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "start:example": "./bin/cli.js ./server-example.js",
     "prepublishOnly": "./prepare.sh"
   },
   "keywords": [],
