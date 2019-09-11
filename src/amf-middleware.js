@@ -18,8 +18,13 @@ module.exports = () => (req, res, next) => {
             data.push(chunk);
         });
         req.on('end', function () {
-            req.body = new amf.Deserializer(new Uint8Array(Buffer.concat(data))).readObject();
-            next();
+            try {
+              req.body = new amf.Deserializer(new Uint8Array(Buffer.concat(data))).readObject();
+              next();
+            } catch (err) {
+              console.error(err);
+              res.send(400);
+            }
         });
     } else {
         next();
