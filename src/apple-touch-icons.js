@@ -17,11 +17,11 @@ module.exports = (app, icons) => {
             return;
         }
 
-        const matches = req.path.match(/apple\-touch\-icon\-([^\.]+).png$/i);
+        const matches = req.path.match(/apple-touch-icon-([^.]+).png$/i);
         if (matches) {
             const icon = icons.output[matches[1]];
             if (icon) {
-                const buffer = new Buffer(icon.data, 'base64');
+                const buffer = Buffer.from(icon.data, 'base64');
                 res.writeHead(200, {
                     'Content-Type': 'image/png',
                     'Content-Length': buffer.length
