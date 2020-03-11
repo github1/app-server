@@ -1,7 +1,7 @@
 {
   "name": "@github1/app-server",
   "private": false,
-  "version": "0.3.57",
+  "version": "0.3.88",
   "description": "Provides a simple container for server-side rendered apps",
   "main": "src/index.js",
   "bin": {
@@ -20,7 +20,7 @@
     "testURL": "http://localhost"
   },
   "dependencies": {
-    "@github1/smerge": "0.3.57",
+    "@github1/smerge": "0.3.88",
     "body-parser": "^1.18.2",
     "chalk": "^2.3.2",
     "compression": "^1.7.2",
