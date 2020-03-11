@@ -161,14 +161,15 @@ module.exports = (process, express, port, extensions) => {
         }
     });
 
-    app.listen(port, () => {
+    const server = app.listen(port, () => {
         extensions
             .forEach(extension => {
+                extensionContext.server = server;
                 if (extension.onStart) {
                     extension.onStart(extensionContext);
                 }
             });
         console.log(chalk.blue('[app-server]') + ' Listening on port ' + chalk.green(port));
     });
-
+    return server;
 };
