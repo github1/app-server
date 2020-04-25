@@ -1,7 +1,7 @@
 {
   "name": "@github1/app-server",
   "private": false,
-  "version": "0.0.0",
+  "version": "v0.3.94",
   "description": "Provides a simple container for server-side rendered apps",
   "main": "src/index.js",
   "bin": {
@@ -14,13 +14,13 @@
     "prepublishOnly": "./prepare.sh"
   },
   "keywords": [],
-  "author": "",
-  "license": "",
+  "author": "John Collier <john.collier4@gmail.com>",
+  "license": "MIT",
   "jest": {
     "testURL": "http://localhost"
   },
   "dependencies": {
-    "@github1/smerge": "0.0.0",
+    "@github1/smerge": "v0.3.94",
     "body-parser": "^1.18.2",
     "chalk": "^2.3.2",
     "compression": "^1.7.2",
@@ -39,5 +39,9 @@
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/github1/app-server"
   }
 }
