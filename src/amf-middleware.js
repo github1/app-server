@@ -9,11 +9,11 @@ module.exports = () => (req, res, next) => {
             serializer.writeObject(body);
             res.type('application/x-amf');
             res.send = oldSend;
-            oldSend.apply(res, [new Buffer(serializer.writer.data, 'binary')]);
+            oldSend.apply(res, [Buffer.from(serializer.writer.data)]);
         };
     }
     if (req.header('content-type') === 'application/x-amf') {
-        var data = [];
+        const data = [];
         req.on('data', chunk => {
             data.push(chunk);
         });
