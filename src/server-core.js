@@ -163,7 +163,7 @@ module.exports = (process, express, port, extensions) => {
 
     const server = app.listen(port, () => {
         extensions
-            .forEach(extension => {
+            .forEach((extension) => {
                 extensionContext.server = server;
                 if (extension.onStart) {
                     extension.onStart(extensionContext);
