@@ -1,4 +1,4 @@
-const amf = require('./amf');
+require('@github1/amfjs/amf');
 
 module.exports = () => (req, res, next) => {
     if (req.header('accept') === 'application/x-amf') {
