@@ -5,11 +5,15 @@ module.exports = () => (req, res, next) => {
         const oldSend = res.send;
         res.send = function (data) {
             const body = arguments[0];
-            const serializer = new amf.Serializer();
-            serializer.writeObject(body);
+            let toSend = body;
+            if (!(body instanceof ArrayBuffer)) {
+                const serializer = new amf.Serializer();
+                serializer.writeObject(body);
+                toSend = Buffer.from(serializer.writer.data);
+            }
             res.type('application/x-amf');
             res.send = oldSend;
-            oldSend.apply(res, [Buffer.from(serializer.writer.data)]);
+            oldSend.apply(res, [toSend]);
         };
     }
     if (req.header('content-type') === 'application/x-amf') {
