@@ -1,7 +1,7 @@
 {
   "name": "@github1/app-server",
   "private": false,
-  "version": "0.4.46",
+  "version": "0.4.3",
   "description": "Provides a simple container for server-side rendered apps",
   "main": "src/index.js",
   "bin": {
@@ -22,7 +22,7 @@
     }
   },
   "dependencies": {
-    "@github1/amfjs": "1.0.1",
+    "@github1/amfjs": "1.0.2",
     "@github1/smerge": "0.4.3",
     "body-parser": "1.19.0",
     "chalk": "2.3.2",
